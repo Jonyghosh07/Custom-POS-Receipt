@@ -30,7 +30,7 @@
     "installable": True,
     "auto_install": False,
     
-    "price": 49.99,
+    "price": 8.00,
     "currency": "EUR",
     
     "maintainer": "Jony Ghosh",
