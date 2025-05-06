@@ -13,17 +13,10 @@
                     </div>
                 </t>
                 <div>
-                    <span>House 25, Road 13, Nikunja 2, Dhaka, Bangladesh, Mobile :
+                    <span>Mobile :
                         <span t-esc="props.data.company.phone" />
                     </span>
                 </div>
-                <!-- <div class="row" style="border-bottom:1px dashed; border-top:1px dashed; margin-left:0px; margin-right:0px;">
-                    <div class="col-6" style="text-align: left;">
-                    </div>
-                    <div class="col-6" style="text-align: right;">
-                        <span>Mushak- 6.3</span>
-                    </div>
-                </div> -->
             </div>
         </xpath>    
     </t>
@@ -35,7 +28,6 @@
         <xpath expr="//OrderWidget" position="attributes">
             <attribute name="t-if">false</attribute>
         </xpath>
-        <!-- <xpath expr="//div[@class='pos-receipt p-2']" position="replace"> -->
         <xpath expr="//t[@t-if='!props.basic_receipt']" position="replace">
             <div class="pos-receipt" style="padding-right:10px !important; margin:0px !important;">
                 <div class="row" style="border-bottom:1px dashed; border-top:1px dashed; margin-left:0px; margin-right:0px;">
@@ -44,9 +36,6 @@
                             <t t-esc="props.data.customer" />
                         </span>
                     </div>
-                    <!-- <div class="col-5" style="text-align: right; font-size:10px; margin-left:0px; margin-right:0px;">
-                        <span>Mushak- 6.3</span>
-                    </div> -->
                 </div>
                 <div>
                     <table class='receipt-orderlines'
@@ -170,26 +159,10 @@
 
                 <div class='before-footer' />
                 <div class="row">
-                    <!-- <div t-if="props.data.customer" class="col-6" style="text-align: left; font-size:10px;">Customer: 
-                        <t t-esc="props.data.customer" />
-                    </div> -->
                     <div t-if="props.data.cashier" class="col-12" style="text-align: left; font-size:10px;">Cashier :
                         <t t-esc="props.data.cashier" />
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <t t-if="props.data.date">
-                        <div style="text-align:center;">
-                            <span>Date &amp; time: </span>
-                            <t t-esc="props.data.date" />
-                        </div>
-                    </t>
-                    <t t-else="">
-                        <div style="text-align:center;">
-                            <t t-esc="props.data.date" />
-                        </div>
-                    </t>
-                </div> -->
 
 
                 <div class="row" style="font-size:15px; font-weight:bold; text-align:center;">
@@ -211,11 +184,7 @@
                 
                 <div style="font-size: 9px; text-align: center; border-top:1px solid black; border-bottom:1px solid black;">
                     <span>
-                        কাটা ছেড়া ও ফ্রিজে সংরক্ষণশীল ওষুধ ফেরত নেওয়া হয় না।
-                    </span>
-                    <br/>
-                    <span>
-                        ওষুধ ফেরত নেওয়ার সময় ক্যাশমেমো সাথে আনতে হবে।
+                        Custom Text to show on receipt
                     </span>
                 </div>
             </div>
