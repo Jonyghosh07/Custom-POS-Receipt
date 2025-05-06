@@ -30,9 +30,6 @@
     "installable": True,
     "auto_install": False,
     
-    "price": 8.00,
-    "currency": "EUR",
-    
     "maintainer": "Jony Ghosh",
     "support": "jony.ghosh98@gmail.com",
 }
